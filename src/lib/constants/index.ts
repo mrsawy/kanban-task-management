@@ -1,1 +1,1 @@
-export const JSON_SERVER_URL = "http://localhost:4000"
+export const JSON_SERVER_URL = "https://kanban.hadefah.com/"
