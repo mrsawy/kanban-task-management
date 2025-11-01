@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎯 Kanban To-Do List Dashboard
 
-## Getting Started
+A fully-featured, interactive Kanban board built with Next.js, featuring drag-and-drop functionality and real-time updates.
 
-First, run the development server:
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://mr-kanban.vercel.app/) [![Bonus Task](https://img.shields.io/badge/bonus-completed-blue)](https://mr-kanban.vercel.app/bonus.html)
+
+## 🚀 Live Demo
+
+- **Main App**: [https://mr-kanban.vercel.app/](https://mr-kanban.vercel.app/)
+- **Bonus Task**: [https://mr-kanban.vercel.app/bonus.html](https://mr-kanban.vercel.app/bonus.html)
+
+## ✨ Features
+
+- ✅ Four-column Kanban board (Backlog, In Progress, Review, Done)
+- ✅ Create, update, and delete tasks
+- ✅ Drag & drop between columns with smooth animations
+- ✅ Search tasks by title or description
+- ✅ Pagination/Infinite scroll
+- ✅ Optimistic UI updates with React Query caching
+- ✅ Fully responsive design
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- Next.js 14
+- Zustand (State Management)
+- React Query (Data Fetching)
+- @hello-pangea/dnd (Drag & Drop)
+- TypeScript
+
+**Backend**
+- json-server
+- Deployed on AWS EC2
+
+## 📦 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone repository
+git clone <your-repo-url>
+cd kanban-dashboard
+
+# Install dependencies
+pnpm install
+
+# Set environment variables
+echo "NEXT_PUBLIC_API_URL=http://localhost:4000" > .env.local
+
+# Run development server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔌 Backend Setup (Optional - for local development)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Install json-server globally
+npm install -g json-server
 
-## Learn More
+# Run server
+json-server --watch db.json --port 4000
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎁 Bonus Task
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+jQuery-based to-do list with add/delete functionality and fade animations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 Task Schema
 
-## Deploy on Vercel
+```json
+{
+  "id": 1,
+  "title": "Design homepage",
+  "description": "Include hero section",
+  "column": "backlog"
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend**: Vercel
+- **Backend**: AWS EC2
+
+---
+
+**⏱️ Development Time**: ~3 hours (Main) + ~1 hour (Bonus)
