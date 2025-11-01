@@ -1,1 +1,1 @@
-export const JSON_SERVER_URL = "https://kanban.hadefah.com/"
+export const JSON_SERVER_URL = "https://kanban.hadefah.com"
