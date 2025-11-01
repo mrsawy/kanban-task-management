@@ -7,7 +7,7 @@ A fully-featured, interactive Kanban board built with Next.js, featuring drag-an
 ## 🚀 Live Demo
 
 - **Main App**: [https://mr-kanban.vercel.app/](https://mr-kanban.vercel.app/)
- ![Main App](https://drive.google.com/file/d/1AxqnsAyZjio96rWQi7iyoNYEwK9WWu_6/view?usp=sharing)
+![Main App](https://drive.google.com/file/d/1AxqnsAyZjio96rWQi7iyoNYEwK9WWu_6/view?usp=sharing)
 
 
 - **Bonus Task**: [https://mr-kanban.vercel.app/bonus.html](https://mr-kanban.vercel.app/bonus.html)
